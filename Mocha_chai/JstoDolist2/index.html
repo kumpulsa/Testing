@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h2 style="margin: 5px">To Do List</h2>
+      <input type="text" id="myInput" placeholder="tehtävä..." />
+      <span onclick="newElement()" class="addBtn">Lisää</span>
+      <button type="button" id="clear-list" onclick="removeAll()">
+        Tyhjennä lista
+      </button>
+    </div>
+    <h2 class="h2Header">Tehtävät</h2>
+    <ul id="myUL">
+      <li class="checked">Tehtävä 1</li>
+      <li>Harjoittele koodausta</li>
+      <li>Lue kirja</li>
+    </ul>
+
+    <ul class="todo" id="todo"></ul>
+    <h2 class="h2Header">Tehdyt</h2>
+    <ul class="completed" id="completed"></ul>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
